@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Javascipt Quiz</title>
+</head>
+<body>
+    <div class="timer">Time</div>
+    <div class="wrapper">
+        <div class="start">
+            <h1>Simple Javascipt Quiz</h1>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- Pop Up Screen -->
+    <div class="popup">
+        <div class="popup-title">
+            <span>Before We Begin</span>
+        </div>
+        <div class="popup-list">
+            <div class="popup-info">
+                <div>There are 20 seconds per question.</div> </div>
+            <div class="popup-info">Each question is worth 2 points each.</div>
+            <div class="popup-info">Good Luck!</div>
+        </div>
+        <div class="buttons">
+        <button class="end">End Quiz</button>
+        <button class="redo">Try Again</button>
+        </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div class="quiz-scrn">
+        <header>
+            <div class="title">Simple Javascipt Quiz</div>
+            <div class="timer">
+                <div class="time-left">Time Remaining</div>
+                <div class="time">20</div>
+            </div>
+        </header>
+        <section>
+            <div class="question">
+                <span>Where do you link script tags?</span>
+            </div>
+            <div class="choice-list">
+                <div class="choices">
+                    <span>In the header section</span>
+                    <div class="icon-tick"><fas class="fa-check"></fas></div>
+                    </div>
+                </div>
+                <div class="choices">
+                    <span>In the body section</span>
+                    <div class="icon-cross"><fas class="fa-times"></fas></div>
+                 </div>
+                </div>
+                <div class="choices">
+                  <span>Link it in the css file</span>
+                  <div class="icon"><fas class="fa-times"></fas></div>
+                 </div>
+             </div>
+             <div class="choices">
+                  <span>Where ever you want</span>
+                  <div class="icon"></div><fas class="fa-times"></fas></div>
+                  </div>
+             </div>
+            </div>
+        </section>
+        <!-- Quiz Footer -->
+        <footer>
+            <div class="total-ques">
+                <span><p>2</p><p>Of</p><p>10</p><p>Questions</p></span>
+            </div>
+            <button class="next-btn"></button>
+        </footer>
+    </div>
+
+    <!-- <script src="./assets/javascript/questions.js"></scrip> -->
+    <script src="./assets/javascript/logic.js"></script>
+</body>
+</html>

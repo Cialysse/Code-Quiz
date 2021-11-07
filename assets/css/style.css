@@ -1,0 +1,214 @@
+
+body {
+    background-image: url(../images/javascript-img.jpeg);
+    color: slategray;
+}
+
+#start-btn,
+.alrt-box, quiz-scrn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Button Styling */
+#start-btn button {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(255, 95, 3);
+    padding: 15px 30px;
+}
+
+.popup {
+    display: none;
+     width: 540px;
+     background: #fff;
+     border-radius: 5px; 
+     justify-content: center;
+     margin: 0 auto;
+ }
+
+ .popup .popup-title {
+      height: 60px;
+      width: 100%;  
+      border-bottom: 1px solid lightslategrey;  
+      display: flex;  
+      align-items: center; 
+      padding: 0 20;  
+      font-size: 20px; 
+      font-weight: 500;  
+      justify-content: center;
+ }
+
+ .popup .popup-list {
+      padding: 15px 35px;
+  } 
+
+ .popup .popup-list .popup-info {
+     margin: 5px 0;
+     font-size: 17px;
+ }
+
+ .popup .buttons {
+     height: 60px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end; 
+     padding: 0 35px;
+     border-top: 1px solid lightslategrey;
+ } 
+
+ .popup .buttons button {
+     margin: 0 5px;
+     height: 40px;
+     width: 100px;
+     border: 1px solid transparent;
+     border-radius: 5px; 
+     background: rgba(255, 95, 3);
+     color: #fff;
+     font-size: 16px;
+     font-weight: 500;
+     transition: all 0.3s ease;
+ }
+
+ .butons button .end {
+     color: rgba(255, 95, 3);
+ }
+
+ .butons button .end:hover {
+     color: #fff;
+     background: rgba(255, 95, 3);
+ }
+
+ .butons button .redo {
+     color: #fff;
+     background: rgba(255, 95, 3);
+ }
+
+.butons button .redo:hover {
+    background: rgba(255, 95, 3);
+}
+
+.quiz-scrn { 
+    width: 550px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.quiz-scrn header {
+    position: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+
+.quiz-scrn header .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz-scrn header .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    background:#fedb8a;
+    border: 1px solid #fdc543;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+
+.quiz-scrn header .timer time-left {
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+
+.quiz-scrn .header .timer .time {
+    font-size: 18px;
+    font-weight: 500;
+    background: #343a40;
+    height: 30px;
+    width: 45px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid #343a40;
+}
+
+.quiz-scrn section {
+    padding: 25px 30px 20px 30px;
+    background: #fff;
+}
+
+.quiz-scrn section .question {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.quiz-scrn section .choice-list {
+    padding: 20px 0;
+    display: block;
+}
+
+section .choice-list .choices {
+    background: #fdbd8b;
+    border: 1px solid #f99a6b;
+    border-radius: 5px;
+    padding: 8px 15px; 
+    margin-bottom: 15px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+section .choice-list .choice:hover {
+    color: #ee0b0e;
+    background: #fb9f05;
+    border-color: #f87004;
+}
+
+.choice-list .choices:last-child {
+    margin-bottom: 0px;
+}
+
+.choice-list .choice .icon {
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    line-height: 24px;
+    pointer-events: none;
+}
+
+.choice-list .choices .icon.tick { 
+    color: #23903c;
+    border-color: #23903c;
+    background: #d4edda;
+}
+
+.choice-list .choices .icon.tick { 
+    color: #a4283a;
+    border-color: #f8d7da;
+    background: #a4283a;
+}
+
+.quiz-scrn footer {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    
+}
